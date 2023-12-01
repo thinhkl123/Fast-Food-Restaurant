@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    background-color: #1e1c2a;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 25px;
+    margin-top: 20px;
+}
+
+header h1 {
+    color: #ff7200;
+}
+
+header ul {
+    display: flex;
+    color: azure;
+    list-style: none;
+}
+
+header ul li {
+    margin-right: 25px;
+}
+
+header ul li a {
+    color: azure;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    color: #ff7200;
+}
+
+main #home {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:200px;
+    min-height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+
+main #home .desc-home h1 {
+    color:#ff7200;
+    font-size: 75px;
+}
+
+main #home .desc-home p {
+    color: azure;
+    font-size: 30px;
+}
+
+main #home .desc-home button {
+    color: azure;
+    font-size: 15px;
+    background-color: #ff7200;
+    padding: 5px 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main #home img {
+    height: 600px;
+}
+
+main #about {
+    display: grid;
+    grid-template-columns: 50% auto;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+main #about img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto ;
+    width: 480px;
+    max-width: 100%;
+    height: auto;
+}
+
+main #about .desc-about h3 {
+    color: #ff7200;
+}
+
+main #about .desc-about h2 {
+    color: azure;
+    font-size: 40px;
+}
+
+main #about .desc-about p {
+    color: azure;
+}
+
+main #about .desc-about button {
+    color: azure;
+    background-color: #ff7200;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+main #menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+main #menu .desc-menu {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+main #menu .desc-menu h3 {
+    color: #ff7200;
+}
+
+main #menu .desc-menu h2 {
+    font-size: 35px;
+    color: azure;
+}
+
+main #menu .list-dish {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-gap: 50px;
+    align-items: center;
+    max-width: 100%;
+}
+
+main #menu .list-dish .dish {
+    background-color: antiquewhite;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 55px;
+    position: relative;
+}
+
+main #menu .list-dish .dish img {
+    width: 220px;
+    height: 220px;
+}
+
+main #menu .list-dish .dish .price {
+    color: #ff7200;
+}
+
+main #menu .list-dish .dish .icon-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 25px;
+    color: azure;
+    background-color: #ff7200;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 2px auto;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+main #services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+main #services h3 {
+    color: #ff7200;
+}
+
+main #services h2 {
+    font-size: 35px;
+    color: azure;
+}
+
+main #services .list-service {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,auto));
+    grid-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 50px;
+}
+
+main #services .list-service .service {
+    text-align: center;
+}
+
+main #services .list-service .service img {
+    width: 120px;
+    height: 120px;
+}
+
+main #services .list-service .service h4 {
+    color: #ff7200;
+    text-align: center;
+    font-size: 25px;
+}
+
+main #services .list-service .service p {
+    color: azure;
+    font-size: 15px;
+    text-align: center;
+}
+
+main #services .talk {
+    background-color: antiquewhite;
+    display: block;
+    width: 66%;
+    text-align: center;
+    border-radius: 10px ;
+    margin-top: 100px;
+}
+
+main #services .talk h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    line-height: 180%;
+}
+
+main #services .talk button {
+    color: azure;
+    background-color: #ff7200;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px ;
+    margin-bottom: 50px;
+}
+
+main #contacts {
+    margin-bottom: 100px;
+}
+
+main #contacts .list-contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,auto));
+    grid-gap:150px;
+    max-width: 100%;
+    justify-content: center;
+}
+
+main #contacts .list-contact .contact h2 {
+    color: azure;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ff7200 ;
+}
+
+main #contacts .list-contact .contact ul {
+    list-style: none;
+}
+
+main #contacts .list-contact .contact li {
+    color: rgba(240, 255, 255, 0.641);
+    margin-bottom: 15px;
+}
+
+main #contacts .list-contact .contact i {
+    background-color: #ff7200;
+    border-radius: 50px;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+
